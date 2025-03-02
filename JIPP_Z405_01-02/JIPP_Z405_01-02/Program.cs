@@ -128,8 +128,11 @@ class Program
         }
 
         // Zadanie 5
+       
         Console.WriteLine("Zadanie 5");
-        int exam = 57;
+        Console.Write("Podaj swoje otrzymane punkty brakut (0-100)");
+        Console.WriteLine();
+        int exam = int.Parse(Console.ReadLine());
         if (exam < 0 || exam > 100)
             Console.WriteLine("Wartość poza zakresem.");
         else if (exam <= 39)
